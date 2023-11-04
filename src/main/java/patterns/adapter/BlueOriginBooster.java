@@ -1,7 +1,7 @@
 package patterns.adapter;
 
 public class BlueOriginBooster {
-    private int power;
+    private final int power;
 
     public BlueOriginBooster(int power) {
         this.power = power;

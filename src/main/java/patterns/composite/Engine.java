@@ -1,7 +1,7 @@
 package patterns.composite;
 
 public class Engine implements VehiclePart {
-    private double cost;
+    private final double cost;
 
     public Engine(double cost) {
         this.cost = cost;

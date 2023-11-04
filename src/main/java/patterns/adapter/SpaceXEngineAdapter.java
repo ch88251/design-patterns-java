@@ -1,7 +1,7 @@
 package patterns.adapter;
 
 public class SpaceXEngineAdapter implements RocketComponent {
-    private SpaceXEngine engine;
+    private final SpaceXEngine engine;
 
     public SpaceXEngineAdapter(SpaceXEngine engine) {
         this.engine = engine;

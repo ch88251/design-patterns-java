@@ -1,7 +1,7 @@
 package patterns.adapter;
 
 public class SpaceXEngine {
-    private int power;
+    private final int power;
 
     public SpaceXEngine(int power) {
         this.power = power;

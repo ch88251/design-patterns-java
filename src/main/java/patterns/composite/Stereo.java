@@ -1,9 +1,9 @@
 package patterns.composite;
 
-public class Chassis implements VehiclePart {
+public class Stereo implements VehiclePart {
     private final double cost;
 
-    public Chassis(double cost) {
+    public Stereo(double cost) {
         this.cost = cost;
     }
 

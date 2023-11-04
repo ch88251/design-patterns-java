@@ -1,7 +1,7 @@
 package patterns.adapter;
 
 public class BlueOriginBoosterAdapter implements RocketComponent {
-    private BlueOriginBooster booster;
+    private final BlueOriginBooster booster;
 
     public BlueOriginBoosterAdapter(BlueOriginBooster booster) {
         this.booster = booster;

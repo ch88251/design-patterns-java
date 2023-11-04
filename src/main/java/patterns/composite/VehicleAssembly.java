@@ -3,7 +3,7 @@ package patterns.composite;
 import java.util.List;
 
 public class VehicleAssembly implements VehiclePart {
-    private List<VehiclePart> parts = new java.util.ArrayList<>();
+    private final List<VehiclePart> parts = new java.util.ArrayList<>();
 
     @Override
     public double getCost() {
