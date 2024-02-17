@@ -1,0 +1,25 @@
+@startuml
+
+class Client {
+}
+
+interface CoffeeMachineInterface {
+  + {abstract} chooseFirstSelection()
+  + {abstract} chooseSecondSelection()
+}
+
+class CoffeeTouchScreenAdapter {
+  + chooseFirstSelection()
+  + chooseSecondSelection()
+}
+
+class OldCoffeeMachine {
+  + selectA()
+  + selectB()
+}
+
+Client -right-> CoffeeMachineInterface
+CoffeeTouchScreenAdapter .up.|> CoffeeMachineInterface
+CoffeeTouchScreenAdapter -right-> OldCoffeeMachine
+
+@enduml
