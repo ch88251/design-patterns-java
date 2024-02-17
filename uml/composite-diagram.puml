@@ -1,0 +1,29 @@
+@startuml
+
+skinparam linetype ortho
+
+class ExpenseTracker
+
+interface Expense {
+  + getTotalExpense() : BigDecimal
+}
+
+class ItemExpense {
+  - itemName : String
+  - expense : BigDecimal
+  + getTotalExpense() : BigDecimal
+}
+
+class CompositeExpense {
+  - expenses : List<Expense>
+  + getTotalExpense() : BigDecimal
+  + addExpense(expense : Expense) : void
+  + removeExpense(expense : Expense) : void
+}
+
+ItemExpense -up-|> Expense
+CompositeExpense -up-|> Expense
+CompositeExpense -up-> Expense
+ExpenseTracker -left-> Expense
+
+@enduml
