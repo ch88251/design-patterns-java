@@ -23,7 +23,7 @@ class CompositeExpense {
 
 ItemExpense -up-|> Expense
 CompositeExpense -up-|> Expense
-CompositeExpense -up-> Expense
+CompositeExpense *-up-> Expense
 ExpenseTracker -left-> Expense
 
 @enduml
